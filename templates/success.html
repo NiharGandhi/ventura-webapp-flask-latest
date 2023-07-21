@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Face Capture and Encoding</title>
+</head>
+
+<body>
+    <h1>Face Capture and Encoding</h1>
+    {% for image in images %}
+    <img src="{{ image }}" width="320" height="240" alt="Captured Image">
+    {% endfor %}
+    <form method="post" action="/train">
+        <input type="hidden" id="class_name" name="class_name" value="{{ class_name }}">
+        <br><br>
+        <input type="submit" value="Train">
+    </form>
+    <br>
+    <a href="/download">Download Encoding File</a>
+</body>
+
+</html>
