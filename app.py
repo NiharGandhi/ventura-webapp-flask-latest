@@ -5,7 +5,6 @@ from firebase_admin import credentials, storage
 from flask import Flask, render_template, request, send_file, jsonify
 import face_recognition
 import pickle
-from tempfile import TemporaryDirectory
 import shutil
 
 # Initialize Flask app
