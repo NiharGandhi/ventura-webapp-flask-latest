@@ -4,5 +4,3 @@ Flask
 cmake
 dlib
 face-recognition
-pickle
-shutil
